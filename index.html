@@ -25,18 +25,23 @@
 
     </section>
     <div class="container">
-        <div id="button" onclick="toggleForm()">
-            <h2>agende seu horario</h2>
-        </div>
+        <h2 id="toggleHeading" onclick="toggleForm()">agende seu horario</h2>    
         <form id="myForm" class="hidden">
+            <br>
             <label for="nome">informe seu nome</label>
             <input type="text" name="nome" id="nome">
             <br>
             <label for="horario">dia desejado</label>
             <input type="date" name="horario" id="horario">
             <br>
-            <label for="serviço">informe o serviço desejado</label>
+            <h4>informe o serviço desejado</h4>
+            <br>
+            <label for="serviço">enceramento</label>
             <input type="checkbox" name="serviço" id="serviço">
+            <label for="serviço2">envidraçamento</label>
+            <input type="checkbox" name="serviço2" id="serviço2">
+            <label for="serviço3">enceramento</label>
+            <input type="checkbox" name="serviço3" id="serviço3">
         </form>
     </div>
     <script src="script.js"></script>
