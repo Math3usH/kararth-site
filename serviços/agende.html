@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Agendamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário de Agendamento</h1>
+
+    <form method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="numero">Número de telefone:</label>
+        <input type="tel" id="numero" name="numero" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="data">Data para agendamento:</label>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <label>Serviços desejados:</label><br>
+        <input type="checkbox" id="servico1" name="servicos[]" value="Serviço 1">
+        <label for="servico1">Serviço 1</label><br>
+
+        <input type="checkbox" id="servico2" name="servicos[]" value="Serviço 2">
+        <label for="servico2">Serviço 2</label><br>
+
+        <input type="checkbox" id="servico3" name="servicos[]" value="Serviço 3">
+        <label for="servico3">Serviço 3</label><br>
+
+        <input type="checkbox" id="servico4" name="servicos[]" value="Serviço 4">
+        <label for="servico4">Serviço 4</label><br>
+
+        <input type="checkbox" id="servico5" name="servicos[]" value="Serviço 5">
+        <label for="servico5">Serviço 5</label><br>
+
+        <input type="checkbox" id="servico6" name="servicos[]" value="Serviço 6">
+        <label for="servico6">Serviço 6</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
