@@ -43,6 +43,12 @@
 
         input[type="checkbox"] {
             margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        label[for^="servico"] {
+            display: inline-block;
+            margin-bottom: 0; 
         }
 
         input[type="submit"] {
@@ -58,6 +64,7 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        
     </style>
 </head>
 <body>
@@ -78,26 +85,28 @@
         <input type="date" id="data" name="data" required><br><br>
 
         <label>Serviços desejados:</label><br>
-        <input type="checkbox" id="servico1" name="servicos[]" value="Serviço 1">
-        <label for="servico1">Serviço 1</label><br>
+        <input type="checkbox" id="servico1" name="servicos[]" value="Serviço 1" data-valor="249.90">
+        <label for="servico1">Polimento  <strong>R$249,90</strong></label><br>
 
-        <input type="checkbox" id="servico2" name="servicos[]" value="Serviço 2">
-        <label for="servico2">Serviço 2</label><br>
+        <input type="checkbox" id="servico2" name="servicos[]" value="Serviço 2" data-valor="298.99">
+        <label for="servico2">Vidrificação  <strong>R$298,99</strong></label><br>
 
-        <input type="checkbox" id="servico3" name="servicos[]" value="Serviço 3">
-        <label for="servico3">Serviço 3</label><br>
+        <input type="checkbox" id="servico3" name="servicos[]" value="Serviço 3" data-valor="119.90">
+        <label for="servico3">Higienização de bancos <strong>R$119,90</strong></label><br>
 
-        <input type="checkbox" id="servico4" name="servicos[]" value="Serviço 4">
-        <label for="servico4">Serviço 4</label><br>
+        <input type="checkbox" id="servico4" name="servicos[]" value="Serviço 4" data-valor="79.90">
+        <label for="servico4">Lavagem completa <strong>R$79,90</strong></label><br>
 
-        <input type="checkbox" id="servico5" name="servicos[]" value="Serviço 5">
-        <label for="servico5">Serviço 5</label><br>
+        <input type="checkbox" id="servico5" name="servicos[]" value="Serviço 5" data-valor="10">
+        <label for="servico5">aaaaaaa</label><br>
 
-        <input type="checkbox" id="servico6" name="servicos[]" value="Serviço 6">
+        <input type="checkbox" id="servico6" name="servicos[]" value="Serviço 6" data-valor="10">
         <label for="servico6">Serviço 6</label><br><br>
+
+        <span id="total">Total: R$0,00</span><br><br>
 
         <input type="submit" value="Enviar">
     </form>
-
+    <script src="../script.js"></script>
 </body>
 </html>
