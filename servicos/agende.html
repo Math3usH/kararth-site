@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Agendamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        label[for^="servico"] {
+            display: inline-block;
+            margin-bottom: 0; 
+        }
+
+        input[type="submit"] {
+            background-color: rgb(241, 210, 71);
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(212, 178, 27);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Formulário de Agendamento</h1>
+
+    <form method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="numero">Número de telefone:</label>
+        <input type="tel" id="numero" name="numero" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="data">Data para agendamento:</label>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <label>Serviços desejados:</label><br>
+        <input type="checkbox" id="servico1" name="servicos[]" value="Serviço 1" data-valor="249">
+        <label for="servico1">Polimento  <strong>R$249</strong></label><br>
+
+        <input type="checkbox" id="servico2" name="servicos[]" value="Serviço 2" data-valor="298">
+        <label for="servico2">Vidrificação  <strong>R$298</strong></label><br>
+
+        <input type="checkbox" id="servico3" name="servicos[]" value="Serviço 3" data-valor="119">
+        <label for="servico3">Higienização de bancos <strong>R$119</strong></label><br>
+
+        <input type="checkbox" id="servico4" name="servicos[]" value="Serviço 4" data-valor="79">
+        <label for="servico4">Lavagem completa <strong>R$79</strong></label><br><br>
+
+        <span id="total">Total: R$0,00</span><br><br>
+
+        <input type="submit" value="Enviar">
+        
+    </form>
+    <script src="../script.js"></script>
+</body>
+</html>
