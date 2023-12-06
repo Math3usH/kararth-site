@@ -11,6 +11,8 @@ body {
 a{
     color: #333;
 }
+
+/* conteudo do html */
 .conteudo {
     background-color: #fff;
     padding: 30px;
@@ -76,7 +78,7 @@ section {
     align-items: center;
     background-color: rgb(241, 210, 71);
 }
-
+/* logo */
 .logo {
     margin-top: 10px;
     width: 100px;
@@ -89,7 +91,7 @@ h1 {
     font-size: 28px;
     color: #333;
 }
-
+/* estilo menu */
 .menu-container {
     position: relative;
     margin-top: 20px;
@@ -98,7 +100,7 @@ h1 {
 .menu {
     cursor: pointer;
 }
-
+/* bottons de acesso */
 #button {
     position: absolute;
     top: -150px; 
@@ -132,6 +134,91 @@ h1 {
 
 
 
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+label[for^="servico"] {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+input[type="submit"] {
+    background-color: rgb(241, 210, 71);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(212, 178, 27);
+}
+
+.checkbox {
+    display: block !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .menu{
+    float: left;
+    position: relative;
+    top: 40px;
+    
+  }
+
+/* responsividade em @media */
 @media (max-width: 999px) {
     .container{
         margin-bottom: 70px;
