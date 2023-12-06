@@ -124,10 +124,13 @@ h1 {
 }
 
 .video{
-    max-width: 200px;
+    width: 350px;
     margin: 0px auto;
     align-items: center;
+    text-align: center;
 }
+
+
 
 @media (max-width: 999px) {
     .container{
