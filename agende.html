@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +50,7 @@
 
         label[for^="servico"] {
             display: inline-block;
-            margin-bottom: 0; 
+            margin-bottom: 0;
         }
 
         input[type="submit"] {
@@ -65,11 +66,12 @@
         input[type="submit"]:hover {
             background-color: rgb(212, 178, 27);
         }
-        
+
     </style>
 </head>
+
 <body>
-<!-- HTML -->
+    <!-- HTML -->
     <h1>Formulário de Agendamento</h1>
 
     <form method="post">
@@ -87,10 +89,10 @@
 
         <label>Serviços desejados:</label><br>
         <input type="checkbox" id="servico1" name="servicos[]" value="Serviço 1" data-valor="249">
-        <label for="servico1">Polimento  <strong>R$249</strong></label><br>
+        <label for="servico1">Polimento <strong>R$249</strong></label><br>
 
         <input type="checkbox" id="servico2" name="servicos[]" value="Serviço 2" data-valor="298">
-        <label for="servico2">Vidrificação  <strong>R$298</strong></label><br>
+        <label for="servico2">Vidrificação <strong>R$298</strong></label><br>
 
         <input type="checkbox" id="servico3" name="servicos[]" value="Serviço 3" data-valor="119">
         <label for="servico3">Higienização de bancos <strong>R$119</strong></label><br>
@@ -101,8 +103,9 @@
         <span id="total">Total: R$0,00</span><br><br>
 
         <input type="submit" value="Enviar">
-        
+
     </form>
     <script src="../script.js"></script>
 </body>
+
 </html>

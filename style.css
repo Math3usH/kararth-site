@@ -18,9 +18,10 @@ a{
     border-radius: 15px;
     margin-bottom: 30px;
     max-width: 450px;
-    min-height: 100px;
+    min-height: 150px;
     margin: 20px auto;
-
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .conteudo h2 {
@@ -78,8 +79,8 @@ section {
 
 .logo {
     margin-top: 10px;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
     border-radius: 50px;
 }
@@ -117,6 +118,20 @@ h1 {
 }
 
 .top{
-    background-color: black;
-    border-radius: 0px;
+    background-color: rgb(241, 210, 71);
+    border-radius: 20px;
+
 }
+
+.video{
+    max-width: 200px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+@media (max-width: 999px) {
+    .container{
+        margin-bottom: 70px;
+    }
+}
+
