@@ -11,6 +11,13 @@ body {
 a{
     color: #333;
 }
+/* estilo menu */
+
+@media screen and (max-width: 430px){
+    ul.menu{
+        display: none;
+    }
+}
 
 /* conteudo do html */
 .conteudo {
@@ -73,9 +80,10 @@ section {
 }
 
 .container-top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1.79fr 1fr 1fr;
+    padding: 10px;
+
     background-color: rgb(241, 210, 71);
 }
 /* logo */
@@ -93,13 +101,9 @@ h1 {
 }
 /* estilo menu */
 .menu-container {
-    position: relative;
     margin-top: 20px;
 }
 
-.menu {
-    cursor: pointer;
-}
 /* bottons de acesso */
 #button {
     position: absolute;
@@ -195,8 +199,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
   }
   
   li a {
@@ -212,16 +214,19 @@ ul {
   }
 
   .menu{
-    float: left;
-    position: relative;
-    top: 40px;
-    
+    display: flex;
+    cursor: pointer;
+    margin: auto;
+    padding-top: 80px;
+    font-size: larger;
   }
 
 /* responsividade em @media */
 @media (max-width: 999px) {
     .container{
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
 }
+@midia (max-width: 430px){
 
+}
